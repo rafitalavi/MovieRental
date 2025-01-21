@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="~/Moviewala.styles.css" asp-append-version="true" />
 </head>
 <body>
-    @Html.Partial("_NavBar")
+    @await Html.PartialAsync("_NavBar")
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
